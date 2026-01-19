@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" fill="none">
+  <!-- Flame Icon Area -->
+  <defs>
+    <linearGradient id="flameGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF4500;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF8C00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Stylized Flame/Dumbbell Icon -->
+  <g transform="translate(10, 10) scale(0.8)">
+    <path d="M50 0 C20 40 0 50 20 80 C30 95 50 100 50 100 C50 100 70 95 80 80 C100 50 80 40 50 0 Z" fill="url(#flameGradient)" filter="url(#glow)"/>
+    <path d="M50 20 C40 45 30 55 40 70 C45 78 50 80 50 80 C50 80 55 78 60 70 C70 55 60 45 50 20 Z" fill="#FFF" opacity="0.3"/>
+  </g>
+
+  <!-- Text: Feel The Burn -->
+  <text x="100" y="65" font-family="'Inter', 'Roboto', sans-serif" font-weight="900" font-size="48" fill="#FFFFFF" letter-spacing="-1">
+    FEEL THE <tspan fill="url(#flameGradient)">BURN</tspan>
+  </text>
+  
+  <!-- Subtitle: Gym -->
+  <text x="100" y="85" font-family="'Inter', 'Roboto', sans-serif" font-weight="500" font-size="16" fill="#CCCCCC" letter-spacing="4" text-transform="uppercase">
+    Unisex Gym
+  </text>
+</svg>
