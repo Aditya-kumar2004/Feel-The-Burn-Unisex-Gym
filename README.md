@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./frontend/public/assets/banner.png" alt="Feel The Burn Banner" width="100%" />
+  <img src="./frontend/public/assets/banner_new.svg" alt="Feel The Burn Banner" width="100%" />
 
   # 🏋️‍♂️ Feel The Burn Unisex Gym
   
