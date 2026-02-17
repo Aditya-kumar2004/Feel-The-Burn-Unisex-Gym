@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./frontend/public/assets/banner_new.svg" alt="Feel The Burn Banner" width="100%" />
+  <img src="./frontend/public/assets/banner_pro.svg" alt="Feel The Burn Banner" width="100%" />
 
   # 🏋️‍♂️ Feel The Burn Unisex Gym
   
@@ -44,17 +44,18 @@ Feel The Burn Unisex Gym
 ├── backend/                # Express server & Mail integration
 │   ├── server.js           # Main backend logic
 │   └── package.json        # Backend dependencies
-├── public/                 # Static assets & Icons
-│   └── assets/             # Main site imagery
-├── src/                    # Frontend source code
-│   ├── components/         # Modular React components
-│   │   ├── ui/             # Reusable Shadcn UI components
-│   │   └── ...             # Feature-specific sections
-│   ├── assets/             # Component-level assets
-│   ├── pages/              # Main page layouts
-│   └── App.jsx             # Main App entry
-├── api/                    # Vercel Serverless entry
-└── vercel.json             # Deployment configuration
+├── frontend/               # Frontend application
+│   ├── public/             # Static assets & Icons
+│   │   └── assets/         # Main site imagery
+│   ├── src/                # Frontend source code
+│   │   ├── components/     # Modular React components
+│   │   │   ├── ui/         # Reusable Shadcn UI components
+│   │   │   └── ...         # Feature-specific sections
+│   │   ├── assets/         # Component-level assets
+│   │   ├── pages/          # Main page layouts
+│   │   └── App.jsx         # Main App entry
+│   ├── api/                # Vercel Serverless entry
+│   └── vercel.json         # Deployment configuration
 ```
 
 ## ⚙️ Installation & Setup
@@ -80,6 +81,7 @@ EMAIL_PASS=your-app-password
 ### 3. Frontend Configuration
 ```bash
 cd ..
+cd frontend
 npm install
 npm run dev
 ```
