@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
   <img src="./public/assets/banner.png" alt="Feel The Burn Banner" width="100%" />
 
@@ -100,3 +101,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
   <b>Fuel Your Fitness Journey with "Feel The Burn"</b>
 </div>
 
+=======
+# Feel-The-Burn-Unisex-Gym
+A modern, responsive fitness website built with React, Vite, and Tailwind CSS, featuring a sleek UI, fast performance, and scalable design for gyms and fitness brands.
+>>>>>>> aa81b292077a8ce804c63b0be9bb749f8dfb098c
