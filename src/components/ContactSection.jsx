@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import SuccessModal from "./SuccessModal";
+import BASE_URL from "@/config/api";
 
 const contactInfo = [
   {
@@ -46,7 +47,7 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch(`${BASE_URL}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
