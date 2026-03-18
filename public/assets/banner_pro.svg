@@ -1,0 +1,45 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with Mesh Gradient -->
+  <rect width="1200" height="400" fill="#09090b"/>
+  <rect width="1200" height="400" fill="url(#paint0_radial_banner)" fill-opacity="0.4"/>
+  <path d="M0 0H1200V400H0V0Z" fill="url(#grid_pattern)" fill-opacity="0.1"/>
+  
+  <!-- Subtle Geometric Accents -->
+  <path d="M1085.5 450L1300 200L1450 450H1085.5Z" stroke="#e11d48" stroke-width="2" stroke-opacity="0.2"/>
+  <circle cx="100" cy="350" r="150" stroke="#e11d48" stroke-width="2" stroke-opacity="0.1"/>
+  <path d="M-50 100L200 -50" stroke="#fb923c" stroke-width="4" stroke-opacity="0.2"/>
+
+  <!-- Main Typography -->
+  <text x="600" y="220" text-anchor="middle" font-family="'Arial', sans-serif" font-weight="900" font-style="italic" font-size="100" fill="url(#text_gradient)" letter-spacing="-2" style="text-shadow: 0px 4px 20px rgba(225, 29, 72, 0.5);">
+    FEEL THE BURN
+  </text>
+  
+  <text x="600" y="280" text-anchor="middle" font-family="'Arial', sans-serif" font-weight="500" font-size="32" fill="#a1a1aa" letter-spacing="10" text-transform="uppercase">
+    Unisex Gym
+  </text>
+
+  <!-- Decorative Line -->
+  <rect x="450" y="310" width="300" height="4" rx="2" fill="#e11d48"/>
+
+  <!-- Dynamic Elements (Pulse) -->
+  <path d="M200 200 H300 L320 150 L350 250 L380 200 H450" stroke="#e11d48" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <path d="M750 200 H820 L850 150 L880 250 L900 200 H1000" stroke="#e11d48" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="text_gradient" x1="200" y1="200" x2="1000" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f4f4f5"/>
+      <stop offset="100%" stop-color="#d4d4d8"/>
+    </linearGradient>
+
+    <radialGradient id="paint0_radial_banner" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 200) rotate(90) scale(400 600)">
+      <stop stop-color="#e11d48" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#09090b" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid_pattern" patternUnits="userSpaceOnUse" width="40" height="40">
+      <path d="M0 40L40 0H20L0 20M40 40V20L20 40" stroke="#27272a" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>

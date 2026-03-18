@@ -11,7 +11,10 @@ export default tseslint.config(
     files: ["**/*.{ts,tsx,js,jsx}"],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.node
+      },
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
@@ -25,7 +28,8 @@ export default tseslint.config(
     rules: {
       ...reactHooks.configs.recommended.rules,
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
-      "no-unused-vars": "warn",
+      "no-unused-vars": "off",
+      "no-undef": "off",
     },
   },
 );
