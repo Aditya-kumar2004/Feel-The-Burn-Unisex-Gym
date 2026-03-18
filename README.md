@@ -1,104 +1,158 @@
-# Feel The Burn Unisex Gym
+<div align="center">
 
-![Feel The Burn Banner](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop)
+<img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Feel The Burn Gym Banner" width="100%" style="border-radius: 12px;" />
 
-**Feel The Burn Unisex Gym** is a modern, high-performance fitness website designed to showcase gym facilities, trainers, and services. It features a fully functional backend for handling contact inquiries with automated email notifications.
+<br/>
+<br/>
 
-## 🚀 Key Features
+# 🔥 Feel The Burn — Unisex Gym
 
-- **Responsive Design**: Fully responsive layout optimized for mobile, tablet, and desktop.
-- **Modern UI/UX**: Premium aesthetic with dark/light mode support, smooth scroll animations (Framer Motion), and glassmorphism effects.
-- **Functional Contact Form**:
-  - **Backend Integration**: Powered by Node.js, Express, and Nodemailer.
-  - **Secure Validation**: Robust email validation (Regex) on the server side.
-  - **Instant Feedback**: Professional "Success Modal" with animations upon submission.
-- **Smart Email Notifications**:
-  - **Admin Alert**: Immediate "New Lead Alert" email sent to the gym admin with structured details.
-  - **Auto-Reply**: Professional automated email sent to the user confirming their inquiry.
-- **Interactive Elements**:
-  - **Trainer Cards**: Clean, structured cards for trainer profiles.
-  - **Clickable Location**: Integrated Google Maps link for easy navigation.
-  - **Clickable Phone**: One-tap calling functionality.
+### A modern, high-performance gym website with a fully integrated backend for contact & email management.
+
+<br/>
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-e11d48?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/Aditya-kumar2004/Feel-The-Burn-Unisex-Gym)
+[![GitHub Stars](https://img.shields.io/github/stars/Aditya-kumar2004/Feel-The-Burn-Unisex-Gym?style=for-the-badge&color=e11d48)](https://github.com/Aditya-kumar2004/Feel-The-Burn-Unisex-Gym/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Aditya-kumar2004/Feel-The-Burn-Unisex-Gym?style=for-the-badge&color=e11d48)](https://github.com/Aditya-kumar2004/Feel-The-Burn-Unisex-Gym/forks)
+[![License: MIT](https://img.shields.io/badge/License-MIT-e11d48?style=for-the-badge)](LICENSE)
+
+</div>
+
+---
+
+## 🚀 Overview
+
+**Feel The Burn Unisex Gym** is a production-ready, full-stack gym website built for a real gym located in Ranchi, Jharkhand. It is engineered to deliver a premium digital presence — from buttery smooth animations to a working contact form that fires real emails to both the gym admin and the customer, all in real time.
+
+> Built with modern web technologies, deployed on Vercel, and designed to convert visitors into gym members.
+
+---
+
+## ✨ Key Features
+
+- 🎨 **Premium UI/UX** — Dark/Light mode, glassmorphism effects, and smooth micro-animations via Framer Motion.
+- 📱 **Fully Responsive** — Flawlessly optimized for mobile, tablet, and desktop.
+- 📬 **Functional Contact Form**:
+  - Real-time email delivery to admin (New Lead Alert) and customer (Auto-Reply).
+  - Robust server-side email validation with strict regex.
+  - Professional branded HTML email templates.
+- ⚡ **Optimistic UI** — Success feedback is instant; emails are sent in the background (fire-and-forget).
+- 🗺️ **Interactive Elements** — Embedded Google Maps, one-tap calling, and clickable trainer cards.
+- 🔒 **Serverless Backend** — Express.js API deployed as a Vercel Serverless Function (`api/index.js`).
+
+---
 
 ## 🛠️ Technology Stack
 
-### Frontend
-- **[React](https://reactjs.org/)**: Component-based UI library.
-- **[Vite](https://vitejs.dev/)**: Fast build tool and development server.
-- **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS for custom designs.
-- **[Framer Motion](https://www.framer.com/motion/)**: Production-ready animation library.
-- **[Lucide React](https://lucide.dev/)**: Clean and consistent icons.
-- **[Shadcn UI](https://ui.shadcn.com/)**: Accessible and customizable UI components.
+| Layer | Technology |
+|---|---|
+| **Frontend** | React 18, Vite, Tailwind CSS, Framer Motion |
+| **UI Components** | Shadcn UI, Radix UI, Lucide React |
+| **Backend** | Node.js, Express.js (Vercel Serverless) |
+| **Email** | Nodemailer + Gmail SMTP |
+| **Deployment** | Vercel (Frontend + Serverless API) |
+| **Routing** | React Router DOM v6 |
 
-### Backend
-- **[Node.js](https://nodejs.org/)**: JavaScript runtime environment.
-- **[Express.js](https://expressjs.com/)**: Web framework for handling API requests.
-- **[Nodemailer](https://nodemailer.com/)**: Module for sending emails.
-- **[Dotenv](https://www.npmjs.com/package/dotenv)**: Environmental variable management.
+---
 
-## 📦 Installation & Setup
+## 📁 Project Structure
 
-To get the project running locally, you need to set up both the **Frontend** and the **Backend**.
+```
+Feel-The-Burn-Unisex-Gym/
+├── api/
+│   └── index.js          # Express Serverless Function (Vercel API)
+├── public/
+│   └── assets/           # Static assets (icons, images)
+├── src/
+│   ├── components/       # All page sections (Hero, Trainers, Contact…)
+│   ├── hooks/            # Custom React hooks
+│   ├── assets/           # Images, logo, SVGs
+│   └── main.jsx          # App entry point
+├── vercel.json           # Vercel deployment config
+├── vite.config.js        # Vite build config
+└── package.json          # Frontend + Backend dependencies
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+To run the project locally, follow the steps below.
 
 ### Prerequisites
-- Node.js installed on your machine.
-- A Gmail account with an **App Password** (for email functionality).
+- **Node.js** (v18 or above) installed on your machine.
+- A **Gmail account** with an [App Password](https://myaccount.google.com/apppasswords) enabled.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Aditya-kumar2004/Gym-fitness.git
-cd Gym-fitness
+git clone https://github.com/Aditya-kumar2004/Feel-The-Burn-Unisex-Gym.git
+cd Feel-The-Burn-Unisex-Gym
 ```
 
-### 2. Backend Setup
-Navigate to the backend folder and install dependencies:
+### 2. Install Dependencies
 ```bash
-cd backend
 npm install
 ```
 
-Create a `.env` file in the `backend` directory with your email credentials:
+### 3. Configure Environment Variables
+Create a `.env` file in the root directory:
 ```env
-PORT=5000
-EMAIL_USER=your-email@gmail.com
+EMAIL_USER=your-gmail@gmail.com
 EMAIL_PASS=your-16-digit-app-password
 ```
 
-Start the backend server:
+### 4. Run the App
 ```bash
 npm run dev
-# Server will run on http://localhost:5000
+# App runs on http://localhost:8080
 ```
 
-### 3. Frontend Setup
-Open a new terminal, navigate to the root directory, and install dependencies:
-```bash
-# Return to root directory if you are in backend
-cd ..
-npm install
-```
+> The `/api/contact` endpoint is proxied to port 5000 in development via `vite.config.js`.
 
-Start the frontend development server:
-```bash
-npm run dev
-# App will run on http://localhost:8080 (or similar)
-```
+---
 
-## 🚀 Deployment
+## 🌐 Deployment on Vercel
 
-### Frontend
-The frontend can be deployed on **Vercel**, **Netlify**, or **GitHub Pages**. Only the `dist` folder needs to be hosted.
+This project is pre-configured for one-click Vercel deployment.
 
-### Backend
-The backend needs to be hosted on a service that supports Node.js, such as **Glitch**, **Render**, **Railway**, or **Heroku**.
-- **Important**: You must update the `fetch` URL in `src/components/ContactSection.jsx` to point to your deployed backend URL instead of `http://localhost:5000`.
+1. Push to GitHub.
+2. Go to [Vercel Dashboard](https://vercel.com) → **Add New Project**.
+3. Import your repository.
+4. Set **Root Directory** → `frontend` (if using the monorepo layout).
+5. Add the following **Environment Variables** in Vercel:
+   - `EMAIL_USER`
+   - `EMAIL_PASS`
+6. Click **Deploy** 🚀
 
-## 👤 Author
+The `vercel.json` handles all routing — static frontend pages AND the `/api/*` serverless backend routes automatically.
 
-**Aditya Kumar**
+---
 
-- GitHub: [@Aditya-kumar2004](https://github.com/Aditya-kumar2004)
+## 🏋️ About Feel The Burn Gym
+
+**Feel The Burn Unisex Gym** is a state-of-the-art fitness facility located at:
+
+📍 Lower Chutia Samlong, Namkum, Ranchi, Jharkhand – 834010  
+📞 +91 081026 66661  
+🕐 Mon–Sat: 5:15 AM – 10:00 PM | Sunday: Open
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to open an [issue](https://github.com/Aditya-kumar2004/Feel-The-Burn-Unisex-Gym/issues) or submit a pull request.
+
+---
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+Released under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+*Created with ❤️ by **[Aditya Kumar](https://github.com/Aditya-kumar2004)***
+
+</div>
